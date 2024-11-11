@@ -98,7 +98,7 @@ class LogService(win32serviceutil.ServiceFramework):
                     conn.close()
 
     def zip_txt_file(self, txt_file, zip_file):
-        with zipfile.ZipFile(zip_file, 'w') as zipf:
+        with zipfile.ZipFile(zip_file, 'w', compression=zipfile.ZIP_BZIP2) as zipf:
             zipf.write(txt_file, os.path.basename(txt_file))
 
 if __name__ == '__main__':
