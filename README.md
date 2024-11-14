@@ -1,4 +1,6 @@
 ***LogGenPez Installation and Service Setup***
+
+
 This document outlines the steps to create an executable from the LogGenPez Python script and set it up as a Windows service using NSSM (Non-Sucking Service Manager).
 
 Prerequisites
